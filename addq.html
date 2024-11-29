@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Quiz Question</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <form action="submit_question.php" method="POST">
+        <label for="question">Question:</label><br>
+        <textarea id="question" name="question" rows="4" cols="50"></textarea><br>
+        
+        <label for="option1">Option 1:</label><br>
+        <input type="text" id="option1" name="option1"><br>
+        
+        <label for="option2">Option 2:</label><br>
+        <input type="text" id="option2" name="option2"><br>
+        
+        <label for="option3">Option 3:</label><br>
+        <input type="text" id="option3" name="option3"><br>
+        
+        <label for="option4">Option 4:</label><br>
+        <input type="text" id="option4" name="option4"><br>
+        
+        <label for="correct_answer">Correct Answer (Option number):</label><br>
+        <input type="text" id="correct_answer" name="correct_answer"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
